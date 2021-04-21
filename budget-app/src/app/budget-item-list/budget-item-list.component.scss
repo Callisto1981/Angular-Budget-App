@@ -27,5 +27,18 @@
                 text-transform: uppercase;
             }
         }
+
+        .income-column {
+            margin-right: 35px;
+            h1 {
+                color: $green;
+            }
+        }
+
+        .expense-column {
+            h1 {
+                color: $red;
+            }
+        }
     }
 }
