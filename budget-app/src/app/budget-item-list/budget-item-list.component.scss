@@ -1,0 +1,13 @@
+@import '../../main-styles.scss';
+
+.budget-items-section {
+    display: flex;
+    padding: 50px;
+
+    .budget-items-container {
+        display: flex;
+        max-width: 680px;
+        height: 100%;
+        width: 100%;
+    }
+}
