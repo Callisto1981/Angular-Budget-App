@@ -1,4 +1,4 @@
-import { Component, Inject, Input } from "@angular/core";
+import { Component, Inject } from "@angular/core";
 import { BudgetItem } from 'src/shared/models/budget-item.model';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 
@@ -18,6 +18,6 @@ export class EditItemModalComponent implements OnInit {
     }
 
     onSubmitted(updatedItem: BudgetItem) {
-        
+        this.dialogRef.close(updatedItem);
     }
 }
