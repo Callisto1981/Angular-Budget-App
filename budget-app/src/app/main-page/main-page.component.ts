@@ -1,15 +1,24 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BudgetItem } from 'src/shared/models/budget-item.model';
 
 
-@NgModule({
-  declarations: [
-    MainPageComponent
-  ],
-  imports: [
-    BrowserModule,
-  ],
-  providers: [],
-  bootstrap: [MainPageComponent]
+@Component({
+  selector: 'app-main-page',
+  templateUrl: './main-page.component.html',
+  styleUrls: ['./main-page.component.scss']
 })
-export class MainPageComponent { }
+export class MainPageComponent implements OnInit {
+
+  budgetItems: BudgetItem[] = new Array<BudgetItem>();
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  addItem(newItem: BudgetItem) {
+    this.budgetItems.push(newItem);
+  }
+
+}
