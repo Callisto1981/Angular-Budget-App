@@ -29,6 +29,7 @@ import { EditItemModalComponent } from '../edit-item-modal/edit-item-modal.compo
             width: '500px',
             data: item
          });
+         
          dialogRef.afterClosed().subscribe(result => {
              if (result) {
                  this.update.emit({
