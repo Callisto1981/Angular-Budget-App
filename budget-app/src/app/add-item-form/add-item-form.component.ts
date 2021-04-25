@@ -7,6 +7,7 @@ import { BudgetItem } from 'src/shared/models/budget-item.model';
     templateUrl: './add-item-form.component.html',
     styleUrls: ['./add-item-form.component.scss']
 })
+
 export class AddItemFormComponent implements OnInit {
 
     @Input() item: BudgetItem; //Binding input to model of BudgetItem that is imported above
