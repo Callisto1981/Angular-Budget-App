@@ -1,4 +1,4 @@
-import { Component, Inject } from "@angular/core";
+import { Component, Inject, OnInit } from "@angular/core";
 import { BudgetItem } from 'src/shared/models/budget-item.model';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 
@@ -8,6 +8,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
     templateUrl: './edit-item-modal.component.html',
     styleUrls: ['./edit-item-modal.component.scss']
 })
+
 export class EditItemModalComponent implements OnInit {
 
     constructor(
