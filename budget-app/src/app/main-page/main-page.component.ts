@@ -8,6 +8,7 @@ import { UpdateEvent } from '../budget-item-list/budget-item-list.component';
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss']
 })
+
 export class MainPageComponent implements OnInit {
 
   budgetItems: BudgetItem[] = new Array<BudgetItem>();
